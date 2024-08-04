@@ -6,9 +6,8 @@ return {
     lazy = true,
     keys = {
       { '<leader>ff', '<cmd>Telescope find_files<cr>', desc = 'Find Files' },
-      { '<leader>fr', '<cmd>Telescope oldfiles<cr>', desc = 'Recent Files' },
-      { '<leader>ft', '<cmd>Telescope live_grep<cr>', desc = 'Search Text in Files' },
-      { '<leader>bi', '<cmd>Telescope buffers<cr>', desc = 'List Buffers' },
+      { '<leader>gf', '<cmd>Telescope live_grep<cr>', desc = 'Search Text in Files' },
+      { '<leader>fb', '<cmd>Telescope buffers<cr>', desc = 'List Buffers' },
       { '<M-x>', '<cmd>Telescope commands<cr>', desc = 'Run Command' },
     },
     dependencies = { 'nvim-lua/plenary.nvim' },
@@ -75,7 +74,7 @@ return {
   {
     'cljoly/telescope-repo.nvim',
     keys = {
-      { '<leader>rr', '<cmd>Telescope repo list<cr>', desc = 'Open git repository' },
+      { '<leader>go', '<cmd>Telescope repo list<cr>', desc = 'Open git repository' },
     },
     config = function()
       require('telescope').load_extension 'repo'
