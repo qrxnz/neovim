@@ -78,6 +78,7 @@ return {
 			"tailwindcss",
 			"gopls",
 			"julials",
+			"sqls",
 		})
 
 		require("lspconfig").nil_ls.setup({
@@ -151,6 +152,7 @@ return {
 			formatters_by_ft = {
 				c = { "clang-format" },
 				go = { "gofmt" },
+				sql = { "sql-formatter" },
 				lua = { "stylua" },
 				nix = { "alejandra" },
 				markdown = { "mdformat" },
