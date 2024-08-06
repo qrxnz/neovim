@@ -79,6 +79,7 @@ return {
 			"gopls",
 			"julials",
 			"sqls",
+			"basedpyright",
 		})
 
 		require("lspconfig").nil_ls.setup({
@@ -155,6 +156,7 @@ return {
 				sql = { "sql-formatter" },
 				lua = { "stylua" },
 				nix = { "alejandra" },
+				python = { "black" },
 				markdown = { "mdformat" },
 			},
 			format_on_save = {
